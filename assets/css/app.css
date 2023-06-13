@@ -9142,7 +9142,7 @@ body.sal-disabled [data-sal|='flip'] {
 .edu-course .content .course-price {
     font-size: 14px;
     font-weight: var(--p-semi-bold);
-    color: var(--color-secondary);
+    color: #f26c19;
     font-family: var(--font-secondary);
     margin-bottom: 14px;
     -webkit-transition: var(--transition);
@@ -33582,4 +33582,14 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 .footer-logo{
     max-width: 120px;
+}
+
+/* COURSE */
+
+.stricked{
+  color: #a79e98 !important;
+}
+
+.title{
+    color: #0e2d72;
 }
