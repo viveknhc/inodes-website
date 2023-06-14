@@ -1,6 +1,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Spartan:wght@400;500;600;700;800&amp;display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&family=Roboto:ital,wght@1,100&display=swap');
+*{
+    font-weight: 200;
+}
 :root {
     --color-primary: #1ab69d;
     --color-secondary: #ee4a62;
@@ -66,7 +69,7 @@
     --p-semi-bold: 600;
     --p-bold: 700;
     --p-extra-bold: 800;
-    --shadow-darker: 0px 10px 50px 0px rgba(26,46,85,0.1);
+    --shadow-darker: 0px 10px 50px 0px rgb(233 117 43 / 13%);
     --shadow-darker2: 0px 20px 50px 0px rgba(26,46,85,0.1);
     --shadow-dark: 0px 10px 30px 0px rgba(20,36,66,0.15);
     --shadow-darkest: 0px 10px 30px 0px rgba(0,0,0,0.05);
@@ -76,7 +79,7 @@
     --transition-2: 0.5s;
     --transition-transform: transform .65s cubic-bezier(.23,1,.32,1);
     --font-primary: 'Poppins', sans-serif;
-    --font-secondary: 'Spartan', sans-serif;
+    --font-secondary: 'Righteous', cursive;
     --font-icomoon: 'icomoon';
     --font-size-b1: 15px;
     --font-size-b2: 13px;
@@ -96,10 +99,6 @@
     --h6-lineHeight: 1.62;
 }
 
-/*==============================
- *  Shortcode
-=================================*/
-/*--------------------------------------*/
 .container-custom,
 .container-custom-1520 {
     width: 100%;
@@ -138,9 +137,7 @@
     }
 }
 
-/*===========================
-    Background Image 
-=============================*/
+
 .shape-group, .edu-breadcrumb-area .edu-breadcrumb, .edu-breadcrumb-area .course-meta, .edu-breadcrumb-area .shape-group, .edu-course-widget.widget-course-summery .content .course-item, .edu-pagination, .about-image-gallery .shape-group li, .about-content .features-list, .about-style-1 .shape-group,
 .about-style-2 .shape-group, .about-style-3 .about-image-gallery .shape-group, .about-style-3 .shape-group, .about-style-5 .shape-group, .cta-banner-2 .shape-group, .cta-banner-3 .shape-group, .edu-cta-banner .shape-group, .edu-cta-box .shape-group, .contact-me .thumbnail .shape-group, .contact-us-info .address-list, .contact-form-area .shape-group, .contact-form.form-style-2 .shape-group, .edu-course .content .course-meta, .edu-course .hover-content-aside .content .course-feature ul, .course-layout-five-tooltip-content .content .course-meta, .course-layout-five-tooltip-content .content .course-feature ul, .course-area-3 .shape-group, .course-area-7 .shape-group, .edu-sorting-area .sorting-right .layout-switcher .switcher-btn, .course-details-content .entry-content .course-meta, .course-curriculam .course-lesson ul, .edu-event .content .event-meta, .edu-event-list .content .event-meta, .edu-event-area .shape-group, .event-details .details-content .event-meta, .edu-faq-content .shape-group, .edu-faq-gallery .shape-group, .faq-style-4 .faq-thumbnail .shape-group, .hero-banner .banner-content .shape-group, .hero-banner .banner-thumbnail .shape-group, .hero-banner.hero-style-2 .banner-gallery .shape-group, .hero-banner.hero-style-3 .shape-group, .hero-banner.hero-style-4 .shape-group, .hero-banner.hero-style-5 .shape-group, .hero-banner.hero-style-6 .shape-group, .hero-banner.hero-style-7 .shape-group, .pricing-table .pricing-body .list-item, .privacy-policy ul, .product-details-area .content .product-feature, .edu-product .inner > .thumbnail .product-hover-info ul, .account-page-area .shape-group, .pv-elementor-area .elementor-thumbnail .shape-group li, .pv-shop-area .shop-thumbnail .shop-thumbnail-images .shape-group li, .pv-inner-page-area .shape-group li, .pv-zoom-demo-area .zoom-thumbnail .shape-group li, .pv-cta-area .shape-group li, .team-share-info, .team-area-3 .shape-group, .team-area-4 .shape-group, .team-area-5 .shape-group, .team-area-6 .shape-group, .team-details-content .main-info .team-meta, .team-details-content .contact-info ul, .video-gallery .shape-group, .error-page-area > .shape-group, .edu-error .thumbnail .shape-group, .coming-soon-page-area .shape-group, .header-top .header-info, .header-action, .edu-footer .information-list, .blog-meta, .edu-blog-area .shape-group, .edu-blog-widget.widget-categories .category-list {
     padding: 0;
@@ -3032,7 +3029,7 @@ Scroll Down Button Animation
     text-align: center;
     line-height: 46px;
     font-size: 24px;
-    color: var(--color-secondary);
+    color: #f26c19;
     left: 0;
     top: 0;
     height: 46px;
@@ -4922,6 +4919,7 @@ body.sal-disabled [data-sal|='flip'] {
     text-transform: uppercase;
     margin-bottom: 14px;
     letter-spacing: 1px;
+    color: #f26c19;
 }
 
 .section-title .pre-title.pre-textsecondary {
@@ -4930,6 +4928,7 @@ body.sal-disabled [data-sal|='flip'] {
 
 .section-title .title {
     margin-bottom: 4px;
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5669,21 +5668,10 @@ body.sal-disabled [data-sal|='flip'] {
     padding-bottom: 1px;
 }
 
-.about-style-3 .about-content .nav-tabs .nav-link:after {
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: var(--color-secondary);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-}
+
 
 .about-style-3 .about-content .nav-tabs .nav-link:hover, .about-style-3 .about-content .nav-tabs .nav-link.active {
-    color: var(--color-secondary);
+    color: #f26c19;
 }
 
 .about-style-3 .about-content .nav-tabs .nav-link:hover:after, .about-style-3 .about-content .nav-tabs .nav-link.active:after {
@@ -7215,7 +7203,7 @@ body.sal-disabled [data-sal|='flip'] {
 }
 
 .edu-cta-box {
-    background: var(--gradient-primary);
+    background: #0e2d72;
     border-radius: 10px;
     padding: 50px 50px;
     position: relative;
@@ -7325,11 +7313,11 @@ body.sal-disabled [data-sal|='flip'] {
     height: 70px;
     width: 70px;
     line-height: 60px;
-    border: 4px solid rgb(14 45 114 / 40%);
+    border: 4px solid rgb(242 108 25 / 51%);
     border-radius: 50%;
     font-size: 24px;
     font-weight: var(--p-semi-bold);
-    color: #0e2d72;
+    color: #f26c19;
     background-color: #fff;
 }
 
@@ -8247,7 +8235,7 @@ body.sal-disabled [data-sal|='flip'] {
 }
 
 .contact-form-area {
-    background-color: var(--color-lighten01);
+    background-color: #ffede16e;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -12914,7 +12902,7 @@ body .tpd-size-medium .tpd-content {
 }
 
 .faq-accordion .accordion-item .accordion-button {
-    background-color: var(--color-primary);
+    background-color: #0e2d72;
     padding: 20px 45px 20px 30px;
     border-radius: 10px 10px 0 0;
     border: none;
@@ -12925,6 +12913,7 @@ body .tpd-size-medium .tpd-content {
     -webkit-transition: .3s;
     transition: .3s;
     z-index: 2;
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 575px) {
@@ -13855,8 +13844,6 @@ body .tpd-size-medium .tpd-content {
     background-color: var(--color-white);
     box-shadow: 0px 20px 40px 0px rgba(42, 11, 88, 0.1);
     border-radius: 5px;
-    margin-top: -120px;
-    position: relative;
     z-index: 2;
 }
 
@@ -14035,7 +14022,9 @@ body .tpd-size-medium .tpd-content {
 }
 
 .hero-banner .banner-content .title {
+    font-size: 10rem;
     margin-bottom: 18px;
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -21083,6 +21072,7 @@ body .tpd-size-medium .tpd-content {
 
 .why-choose-box-2.features-box .content .title {
     margin-bottom: 22px;
+    font-weight: 100;
 }
 
 .why-choose-box-2.features-box.color-primary-style .icon {
@@ -24981,8 +24971,8 @@ body .tpd-size-medium .tpd-content {
 
 .mainmenu-nav .mainmenu > li > a {
     color: var(--color-heading);
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 100;
     padding: 0 11px;
     display: block;
     height: 90px;
@@ -25004,7 +24994,7 @@ body .tpd-size-medium .tpd-content {
 }
 
 .mainmenu-nav .mainmenu > li > a:hover, .mainmenu-nav .mainmenu > li > a.active {
-    color: var(--color-primary) !important;
+    color: #f26c19 !important;
 }
 
 .mainmenu-nav .mainmenu li {
@@ -26020,6 +26010,7 @@ body .tpd-size-medium .tpd-content {
 
 .edu-footer.footer-style-2 .footer-top .edu-footer-widget .widget-title {
     color: #f26c19;
+    font-weight: 100;
 }
 
 .edu-footer.footer-style-3 {
@@ -33592,4 +33583,8 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 .title{
     color: #0e2d72;
+}
+
+.banner-letter{
+    color: #f26c19;
 }
