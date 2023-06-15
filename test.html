@@ -1,49 +1,93 @@
 <style>
-    .panel {
-        width: 100%;
-        height: 100%;
-        background-color: var(--white-col);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 1px solid #dad6d6ad;
+    section {
+        transform-style: preserve-3d;
+        position: relative;
+        height: 55vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .noparallax {
+        background: #f4f4f4;
+        z-index: 1;
+        height: 100vh;
+        color: #f4f4f4;
+    }
+
+    .parallax {
+        height: 100vh;
+    }
+
+    .parallax::after {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-size: 100%;
+        transform: translateZ(-2px) scale(1.6);
+    }
+
+    main::-webkit-scrollbar {
+        width: 0;
+        /* Remove scrollbar space */
+        background: transparent;
+        /* Optional: just make scrollbar invisible */
+    }
+
+    main::-webkit-scrollbar-thumb {
+        background: transparent;
+        /* Optional: just make scrollbar thumb invisible */
+    }
+
+    @-moz-document url-prefix() {
+        main {
+            scrollbar-width: none;
+            scrollbar-color: transparent;
+        }
     }
 </style>
-<div class="panel">
-    <h1>Hiiii</h1>
-</div>
-<div class="panel">
-    <h1>Helo</h1>
-</div>
-<div class="panel">
-    <h1>3</h1>
-</div>
 
-<!-- gsap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-<!-- scroll trigger -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
-<!-- scroll to -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollToPlugin.min.js"></script>
+<main>
+    <section class="parallax">
+        <h1>Parallax Test</h1>
+    </section>
 
-<script>
-    gsap.registerPlugin(ScrollTrigger);
+    <section class="noparallax">
+        <h2>Static section I</h2>
+    </section>
 
-    gsap.utils.toArray(".panel").forEach((panel, i) => {
-        ScrollTrigger.create({
-            trigger: panel,
-            start: "top top",
-            scrub: true,
-            pin: true,
-            pinSpacing: false
-        });
-    });
+    <section class="noparallax">
+        <h2>Static section III</h2>
+    </section>
+
+    <div>
+        hiiiiii
+    </div>
+
+    <div>
+        hiiiiii
+    </div>
+    <div>
+        hiiiiii
+    </div>
+    <div>
+        hiiiiii
+    </div>
+    <div>
+        hiiiiii
+    </div>
+    <div>
+        hiiiiii
+    </div>
+    <div>
+        hiiiiii
+    </div>
+    <div>
+        hiiiiii
+    </div>
 
 
-    ScrollTrigger.create({
-        // snap: {
-        //   snapTo: 1 / 4,
-        //   duration: 0.5
-        // }
-    });
-</script>
+</main>

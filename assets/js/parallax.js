@@ -12,10 +12,3 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
     });
 });
 
-
-ScrollTrigger.create({
-    // snap: {
-    //   snapTo: 1 / 4,
-    //   duration: 0.5
-    // }
-});

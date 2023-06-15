@@ -67,7 +67,6 @@
     --p-light: 300;
     --p-regular: 400;
     --p-medium: 500;
-    --p-semi-bold: 600;
     --p-bold: 700;
     --p-extra-bold: 800;
     --shadow-darker: 0px 10px 50px 0px rgb(233 117 43 / 13%);
@@ -3789,7 +3788,7 @@ button.edu-btn.curved-medium:hover {
 
 a.edu-btn.btn-secondary,
 button.edu-btn.btn-secondary {
-    background: var(--color-secondary);
+    background: #000946;
     color: var(--color-white);
 }
 
@@ -5058,7 +5057,6 @@ body.sal-disabled [data-sal|='flip'] {
     font-weight: 500;
     display: inline-block;
     text-transform: uppercase;
-    margin-bottom: 14px;
     letter-spacing: 1px;
     color: #f26c19;
 }
@@ -9126,6 +9124,7 @@ only screen and (max-width: 1199px) {
   Course Styles
 ---------------------*/
 .edu-course {
+    border: 1px solid #0e2d725c;
     background-color: var(--color-white);
     position: relative;
     border-radius: 5px;
@@ -9212,7 +9211,7 @@ only screen and (max-width: 1199px) {
 }
 
 .edu-course .thumbnail .duration {
-    background-color: #f8b81f;
+    background: linear-gradient(90deg, #FF3D00 0%, #FF6200 100%);
     border-radius: 3px;
     padding: 4px 8px;
     font-weight: 500;
@@ -14002,8 +14001,7 @@ body .tpd-size-medium .tpd-content {
 }
 
 .features-area-2 {
-    background: -webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%);
-    background: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    background: linear-gradient(180deg, #00034E 0%, #00123C 100%);
 }
 
 .features-area-3 .features-grid-wrap {
@@ -22137,7 +22135,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .edu-cta-banner-area-6 {
-    background: var(--gradient-primary);
+    background: linear-gradient(90deg, #FF3D00 0%, #FF6200 100%);
     width: 100%;
     overflow: visible !important;
 }
@@ -33945,13 +33943,17 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 /* PARALLAX */ 
 
-.panel {
+.second-banner-image {
     height: 100vh !important;
     background-color: #fff;
     background-image: url(../images/pattern/pattern.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed; 
+}
+.f1{
+    height: 100vh !important;
+    background-color: #fff;
 }
 
 .second-banner-top-heading{
@@ -33962,4 +33964,8 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     color: #FF6200;
     font-size: 68px;
     font-weight: 400;
+}
+
+.section-head{
+    font-size: 52px;
 }
