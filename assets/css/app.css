@@ -33969,3 +33969,12 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 .section-head{
     font-size: 52px;
 }
+
+
+.enroll-side-btn{
+    color: #fff;
+    transform: rotate(-90deg);
+    background: linear-gradient(90deg, #FF3D00 0%, #FF6200 100%);
+    margin-right: -26px;
+    border-radius: 10px 10px 0px 0px;
+}
