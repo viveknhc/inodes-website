@@ -1567,14 +1567,7 @@ a {
     }
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-    font-weight: var(--p-bold);
-}
+
 
 h4,
 .h4,
@@ -14142,7 +14135,7 @@ body .tpd-size-medium .tpd-content {
   Hero Banner Styles
 ---------------------*/
 .hero-banner {
-    min-height: 660px;
+    min-height: 89vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -14156,13 +14149,13 @@ body .tpd-size-medium .tpd-content {
 
 @media only screen and (max-width: 1199px) {
     .hero-banner {
-        min-height: 600px;
+        min-height: 93vh;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-banner {
-        min-height: 100%;
+        min-height: 93vh;
     }
 }
 
@@ -24480,7 +24473,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
     right: 0;
     left: 0;
     z-index: 99;
-    background-color: var(--color-white);
+    background-color: #000946;
     -webkit-animation: headerSticky .95s ease forwards;
     animation: headerSticky .95s ease forwards;
 }
@@ -33882,6 +33875,15 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     margin: 0px;
 }
 
+.hero-main-heading-wrap {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+
+
 .hero-main-heading {
     font-family: 'Righteous';
     font-style: normal;
@@ -33891,11 +33893,21 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     margin: 0px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 28px;
 }
 
-.hero-sub-heading{
+.hero-main-heading-strok {
+    color: #32323200;
+    -webkit-text-stroke:1px rgb(255 255 255 / 33%);
+    font-size: 107.368px;
+}
+
+
+.hero-sub-heading {
     font-size: 28px;
     color: #FFFFFF;
 }
@@ -33904,4 +33916,50 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     height: 41px !important;
     line-height: 42px !important;
     background: linear-gradient(94.67deg, #FFE1D0 -131.46%, #FF5C01 97.24%) !important;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .hero-top-heading {
+        font-size: 30px;
+    }
+
+    .hero-main-heading {
+        font-size: 46px;
+    }
+
+    .hero-main-heading-strok {
+        font-size: 46px;
+    }
+
+    .hero-sub-heading {
+        font-size: 20px;
+    }
+}
+
+
+
+/* PARALLAX */ 
+
+.panel {
+    height: 100vh !important;
+    background-color: #fff;
+    background-image: url(../images/pattern/pattern.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.second-banner-top-heading{
+    color: #020b17;
+}
+
+.second-banner-main-heading{
+    color: #FF6200;
+    font-size: 68px;
+    font-weight: 400;
 }
