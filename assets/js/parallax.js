@@ -1,4 +1,4 @@
-// Hero parallax
+// Index page parallax
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,5 +10,13 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
         pin: true,
         pinSpacing: false
     });
+
+});
+
+ScrollTrigger.create({
+  snap: {
+    snapTo: 1 / 6,
+    duration: 0.5
+  }
 });
 

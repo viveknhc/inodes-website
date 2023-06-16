@@ -12134,9 +12134,6 @@ body .tpd-size-medium .tpd-content {
     }
 }
 
-.course-details-3 .nav-tabs {
-    margin-top: 80px;
-}
 
 @media only screen and (max-width: 767px) {
     .course-details-3 .nav-tabs {
@@ -13979,7 +13976,7 @@ body .tpd-size-medium .tpd-content {
 
 .features-grid-wrap {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -25687,7 +25684,6 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .header-action li {
-    margin: 0 20px;
     line-height: 1;
 }
 
@@ -25799,7 +25795,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .header-action .mobile-menu-bar .hamberger-button:hover {
-    color: var(--color-primary);
+    color: linear-gradient(90deg, #FF3D00 0%, #FF6200 100%) !important;
 }
 
 /*------------------------------
@@ -33836,7 +33832,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 
 .logo-img {
-    max-width: 120px;
+    max-width: 150px;
 }
 
 .footer-logo {
@@ -33913,7 +33909,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 .enroll-now {
     height: 41px !important;
     line-height: 42px !important;
-    background: linear-gradient(94.67deg, #FFE1D0 -131.46%, #FF5C01 97.24%) !important;
+    background: linear-gradient(90deg, #FF3D00 0%, #FF6200 100%) !important;
 }
 
 
@@ -33951,20 +33947,35 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     background-size: cover;
     background-attachment: fixed; 
 }
-.f1{
-    height: 100vh !important;
+.panel{
     background-color: #fff;
 }
 
+
 .second-banner-top-heading{
     color: #020b17;
+    font-size: 44px;
 }
 
 .second-banner-main-heading{
     color: #FF6200;
-    font-size: 68px;
+    font-size: 105.368px;
     font-weight: 400;
 }
+
+@media (max-width: 767px) {
+    .second-banner-top-heading {
+        font-size: 25px;
+    }
+    .second-banner-main-heading{
+        font-size: 48px;
+    }
+    .section-head {
+        font-size: 33px !important;
+    }
+}
+
+
 
 .section-head{
     font-size: 52px;
@@ -33977,4 +33988,13 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     background: linear-gradient(90deg, #FF3D00 0%, #FF6200 100%);
     margin-right: -26px;
     border-radius: 10px 10px 0px 0px;
+}
+
+
+
+@media (max-width: 767px) {
+    .course-description-home{
+        display: none;
+    }
+
 }
