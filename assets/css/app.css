@@ -11778,7 +11778,7 @@ body .tpd-size-medium .tpd-content {
 .course-overview ul li:after {
     content: "\e938";
     font-family: var(--font-icomoon);
-    color: var(--color-primary);
+    color: #ff3e00;
     position: absolute;
     left: 0;
     top: 0;
@@ -22138,8 +22138,8 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .edu-cta-banner-area-6 .thumbnail img {
-    height: 567px;
-    margin-top: -67px;
+    height: 631px;
+    margin-top: -146px;
     margin-left: 60px;
 }
 
@@ -22156,7 +22156,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .edu-cta-banner-area-6 .section-title {
-    padding: 120px 0;
+    padding: 78px 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -26324,8 +26324,9 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .edu-footer .information-list li:hover a {
-    color: var(--color-primary);
+    color: red;
 }
+
 
 .edu-footer .edu-footer-widget {
     position: relative;
@@ -33998,3 +33999,19 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     }
 
 }
+
+.heading-title{
+    color: #0e2d72;
+}
+
+.contact-tag{
+    max-height: 400px;
+}
+
+.connect-action{
+    right: 15px;
+    bottom: 9px
+}
+
+
+max-width: 38px;
